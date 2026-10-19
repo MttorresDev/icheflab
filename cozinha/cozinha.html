@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cozinha - Sistema de Pedidos</title>
+
+    <link rel="stylesheet" href="cozinha.css">
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topo">
+
+        <div class="logo">
+            BREGOSO BURGUER
+        </div>
+
+        <div class="setor">
+            COZINHA
+        </div>
+
+        <div class="hora" id="horaAtual">
+            00:00:00
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+
+        <!-- BARRA DE INFORMAÇÕES -->
+        <section class="barra">
+
+            <div class="info">
+                <span>Pedidos</span>
+                <strong id="totalPedidos">0</strong>
+            </div>
+
+            <div class="info">
+                <span>Preparando</span>
+                <strong id="totalPreparando">0</strong>
+            </div>
+
+            <div class="info">
+                <span>Prontos</span>
+                <strong id="totalProntos">0</strong>
+            </div>
+
+            <div class="info">
+                <span>Tempo médio</span>
+                <strong id="tempoMedio">00:00</strong>
+            </div>
+
+        </section>
+
+
+        <!-- COLUNAS -->
+        <section class="painel">
+
+            <!-- NOVOS -->
+            <div class="coluna">
+
+                <div class="titulo-colunas">
+                    NOVOS PEDIDOS
+                    <span id="contadorNovos">0</span>
+                </div>
+
+                <div id="pedidosNovos" class="lista-pedidos">
+                </div>
+
+            </div>
+
+
+            <!-- PREPARANDO -->
+            <div class="coluna">
+
+                <div class="titulo-coluna preparando">
+                    PREPARANDO
+                    <span id="contadorPreparando">0</span>
+                </div>
+
+                <div id="pedidosPreparando" class="lista-pedidos">
+                </div>
+
+            </div>
+
+
+            <!-- PRONTOS -->
+            <div class="coluna">
+
+                <div class="titulo-coluna pronto">
+                    PRONTOS
+                    <span id="contadorProntos">0</span>
+                </div>
+
+                <div id="pedidosProntos" class="lista-pedidos">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="cozinha.js"></script>
+
+</body>
+
+</html>

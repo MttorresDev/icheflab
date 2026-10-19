@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #11182d;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+
+    height: 70px;
+
+    background: #080e1c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    border-bottom: 2px solid #1e2b48;
+}
+
+
+.logo {
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.setor {
+
+    background: #173d68;
+
+    padding: 10px 25px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.hora {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    font-family: monospace;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+
+    padding: 20px;
+
+    max-width: 1600px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   BARRA
+========================= */
+
+.barra {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.info {
+
+    background: #17213a;
+
+    border: 1px solid #273655;
+
+    border-radius: 7px;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.info span {
+
+    color: #91a0bb;
+
+    font-size: 14px;
+}
+
+
+.info strong {
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   PAINEL
+========================= */
+
+.painel {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    align-items: start;
+}
+
+
+.coluna {
+
+    background: #0d1426;
+
+    border-radius: 7px;
+
+    min-height: 600px;
+
+    padding-bottom: 10px;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.titulo-coluna {
+
+    padding: 14px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 7px 7px 0 0;
+}
+
+
+.titulo-coluna span {
+
+    background: rgba(255,255,255,0.15);
+
+    padding: 4px 9px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+}
+
+
+.titulo-coluna.novo {
+
+    background: #23466c;
+}
+
+
+.titulo-coluna.preparando {
+
+    background: #68551d;
+}
+
+
+.titulo-coluna.pronto {
+
+    background: #245b39;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.lista-pedidos {
+
+    padding: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.pedido {
+
+    background: #e8ecee;
+
+    color: #17202a;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    border-left: 5px solid #7d8991;
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,0.25);
+}
+
+
+.pedido.preparando {
+
+    border-left-color: #e4c328;
+}
+
+
+.pedido.pronto {
+
+    border-left-color: #37a95a;
+}
+
+
+.pedido.atrasado {
+
+    border-left-color: #e33e3e;
+}
+
+
+/* =========================
+   CABEÇALHO CARD
+========================= */
+
+.pedido-cabecalho {
+
+    background: #d8dde0;
+
+    padding: 9px 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.numero {
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+
+.tempo {
+
+    font-family: monospace;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   ITENS
+========================= */
+
+.itens {
+
+    padding: 10px;
+
+    min-height: 100px;
+}
+
+
+.item {
+
+    padding: 4px 0;
+
+    border-bottom: 1px solid #c6cccf;
+
+    font-size: 14px;
+}
+
+
+.item:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.pedido-rodape {
+
+    background: #d8dde0;
+
+    padding: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.status {
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.btn {
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 7px 12px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.btn-iniciar {
+
+    background: #2868a8;
+}
+
+
+.btn-pronto {
+
+    background: #24934b;
+}
+
+
+/* =========================
+   ATRASADO
+========================= */
+
+.pedido.atrasado .tempo {
+
+    color: #d52323;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1000px) {
+
+    .painel {
+
+        grid-template-columns: 1fr;
+    }
+
+    .coluna {
+
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .barra {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .topo {
+
+        padding: 0 12px;
+    }
+
+    .logo {
+
+        font-size: 14px;
+    }
+
+    .setor {
+
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .barra {
+
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iChefLab – Cozinha</title>
+  <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" class="logo-icon"><path d="M6 14a4 4 0 0 1-1-7.9A5 5 0 0 1 12 3a5 5 0 0 1 7 3.1A4 4 0 0 1 18 14v6H6z"/><path d="M6 17h12"/></svg>
+        <div>
+          <strong>iChef<span>Lab</span></strong>
+          <small>SISTEMA DE RESTAURANTE</small>
+        </div>
+      </div>
+
+      <nav id="menu">
+        <button class="nav-btn active" data-view="fila">
+          <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Fila
+        </button>
+        <button class="nav-btn" data-view="preparo">
+          <svg viewBox="0 0 24 24"><path d="M6 14a4 4 0 0 1-1-7.9A5 5 0 0 1 12 3a5 5 0 0 1 7 3.1A4 4 0 0 1 18 14v6H6z"/></svg>Preparo
+        </button>
+        <button class="nav-btn" data-view="prontos">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Prontos
+        </button>
+        <button class="nav-btn" data-view="historico">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Histórico
+        </button>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="board" class="board" data-view="fila">
+        <div class="column" data-col="fila">
+          <h2>Fila <span class="count" id="count-fila">0</span></h2>
+          <div class="list" id="list-fila"></div>
+        </div>
+        <div class="column" data-col="preparo">
+          <h2>Em preparo <span class="count" id="count-preparo">0</span></h2>
+          <div class="list" id="list-preparo"></div>
+        </div>
+        <div class="column" data-col="prontos">
+          <h2>Prontos <span class="count" id="count-prontos">0</span></h2>
+          <div class="list" id="list-prontos"></div>
+        </div>
+      </section>
+
+      <section id="historico" class="historico" hidden>
+        <h2>Histórico <span class="count" id="count-historico">0</span></h2>
+        <div class="list" id="list-historico"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="teste.js"></script>
+</body>
+</html>
